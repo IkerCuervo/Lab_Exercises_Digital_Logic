@@ -90,10 +90,10 @@ Refer to Table \ref{tab:device} for a list of devices.
 \item Create a Verilog module for the code in  Figure~\ref{fig:1} and include it in your project.
 \item Include in your project the required pin assignments for your DE-series board, as discussed
 above. Compile the project.
-\item Download the compiled circuit into the FPGA chip by using the Quartus Programmer
-tool (the procedure for using the Programmer tool is described in
-the tutorial {\it Quartus Introduction}). Test the functionality of the 
+\item Generate a .qsf file in Quartus and upload it to the NO-IDE lab of LabsLand. Test the functionality of the 
 circuit by toggling the switches and observing the LEDs.
+\item For more info, if you have a FPGA chip, you can download the compiled circuit into the FPGA chip by using the Quartus Programmer tool (the procedure
+	for using the Programmer tool is described in the tutorial Quartus Introduction). 
 \end{enumerate}
 
 \begin{table}[H]
@@ -165,9 +165,10 @@ connect the output $M$ to {\it LEDR}$_{3-0}$, and connect the unused LEDR lights
 \item Include in your project the required pin assignments for your DE-series board. As discussed
 in Part I, these assignments ensure that the ports of your Verilog code will use the pins 
 on the FPGA chip that are connected to the {\it SW} switches and {\it LEDR} lights. 
-\item Compile the project, and then download the resulting circuit into the FPGA chip. 
+\item Compile the project, generate a .qsf file in Quartus and upload it to the NO-IDE lab of LabsLand.
 Test the functionality of the 
 four-bit wide 2-to-1 multiplexer by toggling the switches and observing the LEDs.
+\item For more info, if you have a FPGA chip, you can download the compiled circuit into the FPGA chip.
 \end{enumerate}
 
 \section*{Part III}
@@ -211,9 +212,10 @@ provide the four 2-bit inputs $U$ to $X$. Connect the
 output $M$ to the red lights {\it LEDR}$_{1-0}$.
 \item Include in your project the required pin assignments for your DE-series board.
 Compile the project.
-\item Download the compiled circuit into the FPGA chip. Test the functionality of the 
+\item Generate a .qsf file in Quartus and upload it to the NO-IDE lab of LabsLand. Test the functionality of the 
 two-bit wide 4-to-1 multiplexer by toggling the switches and observing the LEDs. Ensure
 that each of the inputs $U$ to $X$ can be properly selected as the output $M$.
+\item For more info, if you have a FPGA chip, you can download the compiled circuit into the FPGA chip.
 \end{enumerate}
 
 \section*{Part IV}
@@ -281,8 +283,9 @@ You should declare the 7-bit port
 in your Verilog code so that the
 names of these outputs match the corresponding names in your board's user manual and pin assignment file.
 \item After making the required pin assignments, compile the project.
-\item Download the compiled circuit into the FPGA chip. Test the functionality of the 
+\item Generate a .qsf file in Quartus and upload it to the NO-IDE lab of LabsLand. Test the functionality of the 
 circuit by toggling the {\it SW}$_{1-0}$ switches and observing the 7-segment display.
+\item For more info, if you have a FPGA chip, you can download the compiled circuit into the FPGA chip.
 \end{enumerate}
 
 \newpage
@@ -385,9 +388,10 @@ Connect the SW switches to the red lights LEDR, and connect the outputs of the f
 multiplexers to the 7-segment displays {\it HEX3}, {\it HEX2}, {\it HEX1}, and {\it HEX0}.
 \item Include the required pin assignments for your DE-series board for all switches, LEDs, 
 and 7-segment displays. Compile the project.
-\item Download the compiled circuit into the FPGA chip. Test the functionality of the 
+\item Generate a .qsf file in Quartus and upload it to the NO-IDE lab of LabsLand. Test the functionality of the 
 circuit by setting the proper character codes on the switches SW$_{7-0}$ and then 
 toggling {\it SW}$_{9-8}$ to observe the rotation of the characters.
+\item For more info, if you have a FPGA chip, you can download the compiled circuit into the FPGA chip.
 \end{enumerate}
 
 \section*{Part VI}
@@ -461,8 +465,9 @@ Connect the outputs of your multiplexers to the 7-segment displays {\it HEX5}, $
 {\it HEX0} for the DE2-115.
 \item Include the required pin assignments for your DE-series board for all switches, LEDs, 
 and 7-segment displays. Compile the project.
-\item Download the compiled circuit into the FPGA chip. Test the functionality of the 
+\item Generate a .qsf file in Quartus and upload it to the NO-IDE lab of LabsLand. Test the functionality of the 
 circuit by toggling {\it SW}$_{9-7}$ to observe the rotation of the characters.
+\item For more info, if you have a FPGA chip, you can download the compiled circuit into the FPGA chip.
 \end{enumerate}
 
 

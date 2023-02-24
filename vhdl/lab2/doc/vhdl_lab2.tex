@@ -36,10 +36,10 @@ a Boolean expression.
 \item Write a VHDL file that provides the necessary functionality. Include this 
 file in your project and assign the pins on the FPGA to connect to the 
 switches and 7-segment displays. Make sure to include the necessary pin assignments.
-\item Compile the project and download the compiled circuit into the FPGA
-chip.
+\item Compile the project, generate a .qsf file in Quartus and upload it to the NO-IDE lab of LabsLand.
 \item Test the functionality of your design by toggling the switches
 and observing the displays.
+\item For more info, if you have a FPGA chip, you can download the compiled circuit into the FPGA chip.
 \end{enumerate}
 
 \section*{Part II}
@@ -112,8 +112,9 @@ similar statements.
 \item Make a Quartus\textsuperscript{\textregistered} project for your VHDL entity.
 \item Compile the circuit and use functional simulation to verify the correct operation of
 your comparator, multiplexers, and circuit {\it A}.
-\item Download the circuit into an FPGA board.  Test the circuit by trying all possible 
+\item Generate a .qsf file in Quartus and upload it to the NO-IDE lab of LabsLand. Test the circuit by trying all possible
 values of $V$ and observing the output displays.
+\item For more info, if you have a FPGA chip, you can download the compiled circuit into the FPGA chip.
 \end{enumerate}
 
 \section*{Part III}
@@ -143,9 +144,9 @@ instances of this full adder.
 \item Use switches $SW_{7-4}$ and $SW_{3-0}$ to represent the inputs $A$ and $B$, respectively.
 Use $SW_{8}$ for the carry-in $c_{in}$ of the adder. Connect the outputs of the adder, 
 $c_{out}$ and $S$, to the red lights LEDR.
-\item Include the necessary pin assignments for your DE-series board, compile the circuit, and
-download it into the FPGA chip.
+\item Include the necessary pin assignments for your DE-series board, compile the circuit, generate a .qsf file in Quartus and upload it to the NO-IDE lab of LabsLand.
 \item Test your circuit by trying different values for numbers $A$, $B$, and $c_{in}$.
+\item For more info, if you have a FPGA chip, you can download the compiled circuit into the FPGA chip.
 \end{enumerate}
 
 \section*{Part IV}
@@ -191,9 +192,9 @@ and $Y$ on the 7-segment displays {\it HEX5} and {\it HEX3}, and display the res
 \item Since your circuit handles only BCD digits, check for the cases when the input 
 $X$ or $Y$ is greater than nine. If this occurs, indicate an error by turning on 
 the red light {\it LEDR}$_9$.
-\item Include the necessary pin assignments for your DE-series board, compile the circuit, and
-download it into the FPGA chip.
+\item Include the necessary pin assignments for your DE-series board, compile the circuit, generate a .qsf file in Quartus and upload it to the NO-IDE lab of LabsLand.
 \item Test your circuit by trying different values for numbers $X$, $Y$, and $c_{in}$.
+\item For more info, if you have a FPGA chip, you can download the compiled circuit into the FPGA chip.
 \end{enumerate}
 
 \section*{Part V}
@@ -239,8 +240,9 @@ while $B$ should be on {\it HEX3}.
 Display the BCD sum, $S_1 S_0$, on {\it HEX1} and {\it HEX0}.
 \item Use the Quartus RTL Viewer tool to examine the circuit produced by compiling your
 VHDL code. Compare the circuit to the one you designed in Part IV.
-\item Download your circuit onto your DE-series board and test it by trying different values for 
-numbers $A$ and $B$.
+\item Compile the project, generate a .qsf file in Quartus and upload it to the NO-IDE lab of LabsLand. Test it by trying different values for
+	numbers $A$ and $B$.
+\item For more info, if you have a FPGA chip, you can download the compiled circuit into the FPGA chip.
 \end{enumerate}
 
 \section*{Part VI}
@@ -249,7 +251,7 @@ Design a combinational circuit that converts a 6-bit binary number into
 a 2-digit decimal number represented in the BCD form. 
 Use switches $SW_{5-0}$ to input the binary number and 7-segment displays 
 {\it HEX1} and {\it HEX0} to display the decimal number.
-Implement your circuit on the DE1-SoC board and demonstrate its functionality.
+Implement your circuit on the NO-IDE lab of LabsLand and demonstrate its functionality.
 
 \input{\CommonDocsPath/copyright.tex}
 \end{document}

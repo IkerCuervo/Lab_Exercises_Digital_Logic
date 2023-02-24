@@ -91,7 +91,7 @@ connect to the switches and the LEDs.
 \item Simulate the behavior of your circuit.
 
 \item Once you are confident that the circuit works properly as a result of your
-simulation, download the circuit into the FPGA chip.  Test the functionality of your 
+simulation, generate a .qsf file in Quartus and upload it to the NO-IDE lab of LabsLand.  Test the functionality of your 
 design by applying the input sequences and observing the output LEDs. Make sure that the
 FSM properly transitions between states as displayed on the red LEDs, and that it produces
 the correct output values on {\it LEDR}$_9$.
@@ -106,6 +106,8 @@ assignment. ({\it Hint}: you should need to make very few changes to the logic e
 in your circuit to implement the modified state assignment.) 
 
 \item Compile your new circuit and test it.
+
+\item For more info, if you have a FPGA chip, you can download the compiled circuit into the FPGA chip.
 
 \begin{table}[H]
 \begin{center}
@@ -233,7 +235,7 @@ whether the state diagram that it shows properly corresponds to the one in Figur
 To see the state codes used for your FSM, open the Compilation Report, select the {\sf Analysis
 and Synthesis} section of the report, and click on {\sf State Machines}.
 
-\item Download the circuit into the FPGA chip and test its functionality.
+\item Generate a .qsf file in Quartus, upload it to the NO-IDE lab of LabsLand and test its functionality.
 
 \item In step 3 you instructed the Quartus Synthesis tool to use the state
 assignment given in your VHDL code. To see the result of removing this setting, open
@@ -245,6 +247,8 @@ circuit and then open the report file, select the {\sf Analysis
 and Synthesis} section of the report, and click on {\sf State Machines}.
 Compare the state codes shown to those given in Table~\ref{tab:modified_state_assignment}, and
 discuss any differences that you observe.
+
+\item For more info, if you have a FPGA chip, you can download the compiled circuit into the FPGA chip.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -260,8 +264,7 @@ The sequence detector can be implemented in a straightforward manner using shift
 instead of using the more formal approach described above. Create VHDL code that
 instantiates two 4-bit shift registers; one is for recognizing a sequence of four 0s, and
 the other for four 1s. Include the appropriate logic expressions in your design
-to produce the output $z$. Make a Quartus project for your design and implement
-the circuit on your DE-series board. Use the switches and LEDs on the board in a similar way as
+to produce the output $z$. Make a Quartus project for your design, generate a .qsf file in Quartus and upload it to the NO-IDE lab of LabsLand. Use the switches and LEDs on the board in a similar way as
 you did for Parts I and II and observe the behavior of your shift registers and the
 output $z$. Answer the following question: could you use just one 4-bit shift
 register, rather than two? Explain your answer.
